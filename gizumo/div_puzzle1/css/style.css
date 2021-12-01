@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* 共通クラスから固有クラスの順にかく */
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.wrapper {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 100px;
+  background-color: #141f40;
+}
+
+/* .main {
+  height: 250px;
+} */
+
+.green-box {
+  float: left;
+  height: 250px;
+  width: 150px;
+  background-color: #80bfa8;
+}
+
+.red-box {
+  float: left;
+  height: 250px;
+  width: 250px;
+  background-color: #8c2727;
+}
+
+
+.footer {
+  height: 100px;
+  background-color: #d98d30;
+}

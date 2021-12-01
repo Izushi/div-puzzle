@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/* floatを使う要素の親にclearfixのclassをつけると、その要素の下が崩れない  */
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.wrapper {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 100px;
+  background-color: #141f40;
+}
+
+/* .main {
+  height: 250px;
+} */
+
+.green-box {
+  float: left;
+  height: 250px;
+  width: 150px;
+  background-color: #80bfa8;
+}
+
+.right-box {
+  float: left;
+  height: 250px;
+  width: 250px;
+}
+
+/* .right-box>.top {
+  width: 250px;
+  height: 150px;
+} */
+
+.right-box>.top>.left {
+  float: left;
+  width: 150px;
+  height: 150px;
+}
+
+.right-box>.top>.left>.top {
+  width: 150px;
+  height: 50px;
+  background-color: #dbd400;
+}
+
+.right-box>.top>.left>.bottom {
+  width: 150px;
+  height: 100px;
+  background-color: #0093b7;
+}
+
+.right-box>.top>.right {
+  float: right;
+  width: 100px;
+  height: 150px;
+  background-color: #ff9e6b;
+}
+
+.right-box>.bottom {
+  width: 250px;
+  height: 100px;
+  background-color: #8c2727;
+}
+
+
+.footer {
+  height: 100px;
+  background-color: #d98d30;
+}
